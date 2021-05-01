@@ -1556,13 +1556,13 @@ console.log('webpack starterkit');
             for (let i of busca){
                 arregloObjetos = {'numeroCorrida' : i.numeroCorrida, 'descripcionServicio' : i.descripcionServicio,
                                     'empresa' : i.empresa, 'descripcionEmpresa' : i.descripcionEmpresa,
-                                listDesc : i.listaDescuentos === undefined ? false:true};
+                                    listaDescuentos : i.listaDescuentos === undefined ? false:true};
 
                             console.log("Numero de corrida: " + i.numeroCorrida + 
                             "\nDescripción de servicio: " + i.descripcionServicio + 
                             "\nEmpresa: " + i.empresa + 
                             "\nDescripción de la Empresa: " + i.descripcionEmpresa + 
-                            "\nPromoción: " + i.listDesc);               
+                            "\nPromoción: " + i.listaDescuentos);               
             }
         //DE LO CONTRARIO, DE NO HABER CORRIDAS DISPONIBLES NOS MANDARÁ UN MENSAJE DE ERROR.
         } else {
